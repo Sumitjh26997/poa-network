@@ -7,3 +7,9 @@ bash <(curl https://get.parity.io -L)
 # FOLDER FOR CHAIN SPEC AND NODE CONFIG
 mkdir ~/parity
 cd ~/parity
+
+#Save Chain Spec
+sudo cp chain_spec.json ~/parity/chain_spec.json
+
+#Create config for node
+sudo cp config.toml ~/parity/$1.toml

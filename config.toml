@@ -1,0 +1,10 @@
+[parity]
+chain = "chain_spec.json"
+base_path = "/home/ethadmin/parity"
+[network]
+port = 30300
+[rpc]
+port = 8540
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+[websockets]
+port = 8450
