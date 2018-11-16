@@ -13,7 +13,7 @@ sudo cp -v chain_spec.json ~/parity/chain_spec.json
 #CREATE CONFIG FOR NODE
 sudo cp -v config.toml ~/parity/$1.toml
 echo $1 >> ~/parity/node.pwds
-echo -n "[account]" >> ~/parity/$1.toml
-echo -n 'password = ["node.pwds"]' >> ~/parity/$1.toml
+sudo echo -n "[account]" >> ~/parity/$1.toml
+sudo echo -n 'password = ["node.pwds"]' >> ~/parity/$1.toml
 
 
