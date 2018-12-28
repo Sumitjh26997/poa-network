@@ -4,16 +4,10 @@
 sudo apt-get install build-essential openssl libssl-dev libudev-dev
 bash <(curl https://get.parity.io -L)
 
-# FOLDER FOR CHAIN SPEC AND NODE CONFIG
-mkdir -v ~/parity
-
-#SAVE CHAIN SPEC
-sudo cp -v chain_spec.json ~/parity/chain_spec.json
-
 #CREATE CONFIG FOR NODE
-sudo cp -v config.toml ~/parity/$1.toml
-echo $1 >> ~/parity/node.pwds
-sudo echo -n "[account]" >> ~/parity/$1.toml
-sudo echo -n 'password = ["node.pwds"]' >> ~/parity/$1.toml
+sudo mv -v config.toml ./$1.toml
+echo $1 >> ./node.pwds
+sudo echo -n "[account]" >> ./$1.toml
+sudo echo -n 'password = ["node.pwds"]' >> ./$1.toml
 
 
