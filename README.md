@@ -1,4 +1,5 @@
 # poa-network setup using parity
+- edit the base path in the .toml file accordingly
 - run setup.sh with name of the node as parameter e.g. ./setup.sh hospital
 - run parity --config (name of node).toml&
 - run curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["(name of parameter)", "(name of parameter"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540 on both nodes.
